@@ -1,0 +1,35 @@
+Eclipse IDE 4.23.0
+jdk 1.8
+jdbc 11
+Apache Tomcat 8.5
+mysql 5.7 --> 8.0.33
+mysql connector 5.1.42 --> 8.0.33
+
+bootstrap-3.3.7-dist
+
+java
+
+- mysql -
+[BBS]
+(bbs)
+CREATE TABLE `BBS` (
+  `bbsID` int(20),
+  `bbsTitle` varchar(50),
+  `userID` varchar(20),
+  `bbsDate` datetime,
+  `bbsContent` varchar(2048),
+  `bbsAvailable` int(20),
+  PRIMARY KEY (`bbsID`)
+)
+
+(user)
+CREATE TABLE `USER` (
+  `userID` varchar(20),
+  `userPassword` varchar(20),
+  `userName` varchar(20),
+  `userGender` varchar(20),
+  `userEmail` varchar(20),
+  PRIMARY KEY (`userID`)
+)
+
+http://52.79.123.252:8080/Community2/bbs.jsp
